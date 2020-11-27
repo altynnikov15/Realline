@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url("../font/AvenirNextCyr/AvenirNextCyr-Regular.eot");
+  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("../font/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../font/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../font/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-style: normal; }
+.navbar {
+  background-color: #ffffff !important; }
+  .navbar .navbar-brand {
+    padding-left: 141px;
+    padding-top: 28.85px;
+    padding-bottom: 28.63px; }
+  .navbar .navbar-collapse {
+    padding-left: 92.59px; }
+    .navbar .navbar-collapse .navbar-nav .nav-item {
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      padding-top: 32px;
+      padding-bottom: 33px;
+      margin-right: 60px;
+      border-bottom: solid 3px transparent; }
+      .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+        transition: 0.3s;
+        border-bottom: solid 3px #235DFF; }
+      .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: #364962 !important; }
+        .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          transition: 0.3s;
+          color: #235DFF !important; }
+
+.form-inline .btn {
+  position: relative;
+  color: #235DFF;
+  border: solid 1px transparent;
+  background: rgba(35, 93, 255, 0.1); }
+  .form-inline .btn:active {
+    color: #235DFF;
+    border: solid 1px transparent;
+    background: rgba(35, 93, 255, 0.1); }
+
+/*# sourceMappingURL=contact-style.css.map */
