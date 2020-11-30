@@ -7,21 +7,39 @@
   url('../font/AvenirNextCyr/AvenirNextCyr-Regular.ttf') format('truetype');
   font-style: normal;
 }
-.shadow-header{
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+.header{
+  max-width: 1920px;
+  margin: auto;
+
+}
+.shadow-header {
   box-shadow: -5px 10px 10px -10px #ABA6B5;
 }
+
 .navbar {
+
+  margin: auto;
   background-color: #ffffff !important;
   padding: 0;
 
   .navbar-brand {
     @media only screen and (max-width: 767px) {
-      padding-left: 0;
-      padding-top: 0;
-      padding-bottom: 0;
+      display: flex;
+      justify-content: space-between;
 
     }
-    padding-left: 141px;
+
     padding-top: 28.85px;
     padding-bottom: 28.63px;
   }
@@ -67,46 +85,269 @@
     position: relative;
     color: #235DFF;
     border: solid 1px transparent;
-    background: rgba(35,93,255,0.1);
-    &:active{
+    background: rgba(35, 93, 255, 0.1);
+
+    &:active {
       color: #235DFF;
       border: solid 1px transparent;
-      background: rgba(35,93,255,0.1);
+      background: rgba(35, 93, 255, 0.1);
 
     }
 
   }
 }
-.btn-menu{
-  .btn-light{
+
+.btn-menu {
+  .btn-light {
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-right:30px ;
+    margin-right: 30px;
     background-color: transparent;
     border: solid 1px transparent;
     color: #235DFF;
-    font-family: Avenir Next Cyr,sans-serif;
+    font-family: Avenir Next Cyr, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 20px; &:active{
+    line-height: 20px;
+
+    &:active {
       border: solid 1px transparent;
-      background-color: rgba(35,93,255,0.1);
+      background-color: rgba(35, 93, 255, 0.1);
     }
 
   }
-  .btn-primary{
-    font-family: Avenir Next Cyr,sans-serif;
+
+  .btn-primary {
+    font-family: Avenir Next Cyr, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     padding: 12px 36px;
     border-radius: 4px;
-    &:before{
+
+    &:before {
 
     }
   }
+}
+
+.h1 {
+  font-family: Avenir Next Cyr, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+  padding-top: 54px;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #235DFF;
+    margin: auto;
+    margin-top: 11px;
+  }
+}
+
+.main-block {
+  margin-bottom: 200px;
+  width: 932px;
+  position: relative;
+  z-index: 10;
+  left: 135px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  border: 1px solid #E9E9E9;
+  border-radius: 10px;
+
+  .contact-block {
+    position: relative;
+    z-index: 11;
+    left: -70px;
+    margin-top: 41px;
+    background-color: #f6f9ff;
+    border-radius: 5px;
+    padding-bottom: 46px;
+
+    .h2 {
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      padding-top: 40px;
+      padding-bottom: 42px;
+    }
+
+    p {
+      padding-left: 132px;
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+
+      .fa-phone-alt {
+        color: #235DFF;
+        background-color: rgba(35, 93, 255, 0.1);
+        padding: 12px;
+        border-radius: 40px;
+      }
+
+      .fa-envelope {
+        color: #235DFF;
+        background-color: rgba(35, 93, 255, 0.1);
+        padding: 12px 12px;
+        border-radius: 40px;
+      }
+    }
+  }
+
+  .telegram {
+
+    position: relative;
+    z-index: 11;
+    left: -70px;
+    margin-top: 26px;
+    text-align: justify;
+    padding: 74px 260px 73px 50px;
+    background-color: #235DFF;
+    border-radius: 10px;
+    background-image: url("../images/img_telegram.png");
+    box-shadow: 0px 10px 40px rgba(35, 93, 255, 0.2);
+
+    a {
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 30px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+
+    }
+
+    span {
+      color: white;
+
+    }
+  }
+
+  .form-block {
+    padding-top: 41px;
+
+    label {
+      display: block;
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      padding-bottom: 11.5px;
+    }
+
+    input {
+      padding-left: 20px;
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      width: 400px;
+      height: 55px;
+      margin-bottom: 25px;
+      border: solid 1px #E9E9E9;
+      border-radius: 5px;
+      outline: none;
+
+      &:focus {
+        border: 1px solid #235DFF;
+      }
+
+    }
+
+    #description {
+      border: solid 1px #E9E9E9;
+      border-radius: 5px;
+      outline: none;
+      padding-top: 17.5px;
+      padding-left: 20px;
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      width: 400px;
+      height: 150px;
+      resize: none;
+
+      &:focus {
+        border: 1px solid #235DFF;
+      }
+    }
+
+    .btn-primary {
+      padding: 18px 83px 17px 84px;
+      margin-left: 150px;
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      background: #235DFF;
+      box-shadow: 0px 10px 40px rgba(35, 93, 255, 0.2);
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      margin-top: 30px;
+    }
+  }
+}
+
+
+.bg-secondary {
+  .footer-block-first {
+    max-width: 1920px;
+    margin: auto;
+    padding-top: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    .footer-logo {
+      padding-bottom:32px;
+      margin: auto;
+    }
+
+    ul {
+      li {
+        display: inline;
+        margin-top: 40px!important;
+        a {
+
+          color: #ffffff;
+          font-family: Avenir Next Cyr, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          margin-left: 50px;
+        }
+      }
+    }
+    p{
+      font-family: Avenir Next Cyr,sans-serif;
+      color: #ffffff;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+
 }
 
 

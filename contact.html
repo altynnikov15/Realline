@@ -20,9 +20,10 @@
 <body>
 
 <header>
-    <div class="container-fluid">
-        <div class="row shadow-header">
-            <nav class="col-8 col-lg-8 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid shadow-header">
+        <div class="row header">
+            <div class="col-8 col-lg-8 col-sm-8 col-md-8">
+            <nav class=" navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -51,14 +52,16 @@
                             <div style="display: none"><input class="form-control mr-sm-2" type="search"
                                                               placeholder="Search"
                                                               aria-label="Search"></div>
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="button"><i
+                            <button id="search" class="btn btn-outline-light my-2 my-sm-0" type="button"><i
                                     class="fas fa-search"></i></button>
                         </form>
+
                     </ul>
 
                 </div>
             </nav>
-            <div class="d-flex justify-content-between m-auto btn-menu ">
+            </div>
+            <div class=" d-flex justify-content-between m-auto btn-menu ">
                 <div type="submit" class="btn-light text-decoration-none text-capitalize">
                     <a>
                         вход</a>
@@ -71,13 +74,95 @@
 
             </div>
 
+
         </div>
     </div>
 </header>
-<section
+<section>
+    <h1 class="h1 text-center ">Свяжитесь с нами!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="row main-block">
+                <div>
+                    <div class="contact-block">
+                        <h2 class="h2 text-center text-capitalize">наши контакты</h2>
+                        <p><i class="fas fa-phone-alt"></i> +380 (50) 234-76-36</p>
+                        <p><i class="far fa-envelope"></i> admin@realline.net</p>
+                    </div>
+                    <div class="telegram ">
+                        <a href="#">Написать нам в<br> <span>Telegram</span></a>
+                    </div>
+
+                </div>
+                <div class="form-block">
+                    <form method="post" action="">
+                        <div>
+                            <label for="name">Имя</label>
+                            <input id="name" type="text" name="Имя">
+                        </div>
+                        <div>
+                            <label for="E-mail">E-mail</label>
+                            <input id="E-mail" type="email" name="email">
+                        </div>
+                        <div>
+                            <label for="description">Описание</label>
+                            <textarea id="description" type="text" name="description"
+                                      placeholder="Здравствуйте, меня интересует один вопрос ..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary text-justify">Отправить</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<footer class=" bg-secondary">
+    <div class="container-fluid">
+        <div class="row footer-block-first">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3 footer-logo">
+                <img src="images/Logo_White.png" alt="">
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                <ul>
+                    <li><a class="text-decoration-none" href="#">Главная</a></li>
+                    <li><a class="text-decoration-none" href="#">О продукте</a></li>
+                    <li><a class="text-decoration-none" href="#">Пакеты</a></li>
+                    <li><a class="text-decoration-none" href="#">Контакты</a></li>
+
+                </ul>
+
+
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3 text-center">
+                <p><img src="images/mail.png"> admin@realline.net</p>
+
+            </div>
+
+        </div>
+        <div class="row footer-block-second">
+            <div>
+<a href="#">Условия пользования</a>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
-<script>$("button").click(function () {
+<script>$("#search").hover(function () {
     $("div").show("fold", 1000);
 });
 </script>
