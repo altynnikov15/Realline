@@ -21,8 +21,8 @@
 
 <header>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="col-12 col-lg-12 navbar navbar-expand-lg navbar-light bg-light">
+        <div class="row shadow-header">
+            <nav class="col-8 col-lg-8 navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,7 +31,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto text-capitalize">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
                         </li>
@@ -48,21 +48,33 @@
                             <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
                         </li>
                         <form class="form-inline my-2 my-lg-0">
-                           <div style="display: none"> <input  class="form-control mr-sm-2" type="search" placeholder="Search"
-                                        aria-label="Search"></div>
-                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i
+                            <div style="display: none"><input class="form-control mr-sm-2" type="search"
+                                                              placeholder="Search"
+                                                              aria-label="Search"></div>
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="button"><i
                                     class="fas fa-search"></i></button>
                         </form>
-
-
                     </ul>
 
                 </div>
             </nav>
+            <div class="d-flex justify-content-between m-auto btn-menu ">
+                <div type="submit" class="btn-light text-decoration-none text-capitalize">
+                    <a>
+                        вход</a>
+
+                </div>
+                <div type="submit" class="btn-primary text-decoration-none text-capitalize">
+                    <a>
+                        регистрация</a>
+                </div>
+
+            </div>
 
         </div>
     </div>
 </header>
+<section
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script>$("button").click(function () {
