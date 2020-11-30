@@ -324,6 +324,7 @@ li {
     }
 
     ul {
+      margin-block-end: auto;
       li {
         display: inline;
         margin-top: 40px!important;
@@ -350,6 +351,18 @@ li {
   }
 
 
+}
+.footer-block-second {
+  a {
+    color: #ffffff;
+    opacity: 0.4;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+  }
 }
 
 
