@@ -220,11 +220,13 @@ li {
       outline: none;
       margin-top: 30px; }
 
+.foot-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
 .bg-secondary .footer-block-first {
   max-width: 1920px;
   margin: auto;
-  padding-top: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  padding-top: 40px; }
   .bg-secondary .footer-block-first .footer-logo {
     padding-bottom: 32px;
     margin: auto; }
