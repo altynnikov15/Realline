@@ -22,56 +22,60 @@
 <header>
     <div class="container-fluid shadow-header">
         <div class="row header">
-            <div class="col-8 col-lg-8 col-sm-8 col-md-8">
-            <nav class=" navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto text-capitalize">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">О продукте <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Пакеты <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Агенствам <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
-                        </li>
-                        <form class="form-inline my-2 my-lg-0">
-                            <div style="display: none"><input class="form-control mr-sm-2" type="search"
-                                                              placeholder="Search"
-                                                              aria-label="Search"></div>
-                            <button id="search" class="btn btn-outline-light my-2 my-sm-0" type="button"><i
-                                    class="fas fa-search"></i></button>
-                        </form>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    </ul>
+                        <ul class="navbar-nav mr-auto text-capitalize text-justify">
 
-                </div>
-            </nav>
-            </div>
-            <div class=" d-flex justify-content-between m-auto btn-menu ">
-                <div type="submit" class="btn-light text-decoration-none text-capitalize">
-                    <a>
-                        вход</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">О продукте <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Пакеты <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Агенствам <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
+                            </li>
+                            <form class="form-inline my-2 my-lg-0">
+                                <div style="display: none;"><input class="form-control mr-sm-2" type="search"
+                                                                   placeholder="Search"
+                                                                   aria-label="Search"></div>
+                                <button id="search" class="btn btn-outline-light my-2 my-sm-0" type="button"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
 
-                </div>
-                <div type="submit" class="btn-primary text-decoration-none text-capitalize">
-                    <a>
-                        регистрация</a>
-                </div>
+                            <div class=" d-flex justify-content-between m-auto btn-menu ">
+                                <div type="submit" class="btn-light text-decoration-none text-capitalize">
+                                    <a>
+                                        вход</a>
 
+                                </div>
+                                <div type="submit" class="btn-primary text-decoration-none text-capitalize">
+                                    <a>
+                                        регистрация</a>
+                                </div>
+
+
+                            </div>
+                        </ul>
+
+
+                    </div>
+                </nav>
             </div>
 
 
@@ -82,20 +86,20 @@
     <h1 class="h1 text-center ">Свяжитесь с нами!</h1>
     <div class="container">
         <div class="row">
-            <div class="row main-block">
-                <div>
+            <div class="row main-block col-12 col-sm-12 col-md-12 col-lg-10 mycol">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mycol">
                     <div class="contact-block">
                         <h2 class="h2 text-center text-capitalize">наши контакты</h2>
                         <p><i class="fas fa-phone-alt"></i> +380 (50) 234-76-36</p>
                         <p><i class="far fa-envelope"></i> admin@realline.net</p>
                     </div>
-                    <div class="telegram ">
+                    <div class="telegram">
                         <a href="#">Написать нам в<br> <span>Telegram</span></a>
                     </div>
 
                 </div>
-                <div class="form-block">
-                    <form method="post" action="">
+                <div class="form-block col-4 col-sm-4 col-md-4 col-lg-4 mycol">
+                    <form method="post" action="" class="mycol">
                         <div>
                             <label for="name">Имя</label>
                             <input id="name" type="text" name="Имя">
@@ -125,37 +129,40 @@
 <footer class=" bg-secondary">
     <div class="container-fluid">
         <div class="foot-border">
-        <div class="row footer-block-first">
-            <div class="col-12 col-sm-3 col-md-3 col-lg-3 footer-logo">
-                <img src="images/Logo_White.png" alt="">
+            <div class="row footer-block-first text-center">
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3  footer-logo">
+                    <img src="images/Logo_White.png" alt="">
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                    <ul>
+                        <li><a class="text-decoration-none" href="#">Главная</a></li>
+                        <li><a class="text-decoration-none" href="#">О продукте</a></li>
+                        <li><a class="text-decoration-none" href="#">Пакеты</a></li>
+                        <li><a class="text-decoration-none" href="#">Контакты</a></li>
+
+                    </ul>
+
+
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                    <p><img src="images/mail.png"> admin@realline.net</p>
+
+                </div>
 
             </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center">
-                <ul>
-                    <li><a class="text-decoration-none" href="#">Главная</a></li>
-                    <li><a class="text-decoration-none" href="#">О продукте</a></li>
-                    <li><a class="text-decoration-none" href="#">Пакеты</a></li>
-                    <li><a class="text-decoration-none" href="#">Контакты</a></li>
-
-                </ul>
-
-
-            </div>
-            <div class="col-12 col-sm-3 col-md-3 col-lg-3 text-center">
-                <p><img src="images/mail.png"> admin@realline.net</p>
-
-            </div>
-
         </div>
-    </div>
-        <div class="row footer-block-second">
-            <div>
-<a href="#">Условия пользования</a>
+        <div class="row footer-block-second text-center">
+            <div class="col-12 col-md-3 ">
+                <a href="#">Условия пользования</a>
             </div>
-            <div>
+            <div class="col-12  col-md-6 ">
+                <p>Copyright 2020 ReaLine, inc</p>
 
             </div>
-            <div>
+            <div class="col-12  col-md-3">
+                <img src="images/visa.png" alt="">
+                <img src="images/mastercard.png" alt="">
 
             </div>
 

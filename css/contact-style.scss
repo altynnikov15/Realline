@@ -8,6 +8,13 @@
   font-style: normal;
 }
 
+.mycol{
+  padding-left: 0!important;
+  padding-right: 0!important;
+
+}
+
+
 
 a {
   text-decoration: none;
@@ -34,11 +41,6 @@ li {
   padding: 0;
 
   .navbar-brand {
-    @media only screen and (max-width: 767px) {
-      display: flex;
-      justify-content: space-between;
-
-    }
 
     padding-top: 28.85px;
     padding-bottom: 28.63px;
@@ -48,6 +50,7 @@ li {
     padding-left: 92.59px;
 
     .navbar-nav {
+      white-space: nowrap;
       .nav-item {
         font-family: "Avenir Next Cyr", sans-serif;
         font-style: normal;
@@ -81,7 +84,9 @@ li {
 
 
 .form-inline {
+
   .btn {
+    margin-right: 352px;
     position: relative;
     color: #235DFF;
     border: solid 1px transparent;
@@ -98,6 +103,7 @@ li {
 }
 
 .btn-menu {
+
   .btn-light {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -153,6 +159,23 @@ li {
 }
 
 .main-block {
+
+  @media only screen and (max-width: 1024px) {
+    border: none!important;
+    position: relative;
+    left: 99px;
+
+  }
+
+  @media only screen and (max-width: 992px) {
+    border: none!important;
+    margin-left: -28px!important;
+
+  }
+  @media only screen and (max-width: 767px) {
+    border: none!important;
+    margin-left: -28px!important;
+  }
   margin-bottom: 200px;
   width: 932px;
   position: relative;
@@ -165,6 +188,7 @@ li {
   border-radius: 10px;
 
   .contact-block {
+
     position: relative;
     z-index: 11;
     left: -70px;
@@ -238,6 +262,16 @@ li {
   }
 
   .form-block {
+    @media only screen and (max-width: 375px) {
+      border: none!important;
+      left: -55px!important;
+
+    }
+    @media only screen and (max-width: 768px) {
+      left: 95px;
+
+    }
+
     padding-top: 41px;
 
     label {
@@ -251,6 +285,10 @@ li {
     }
 
     input {
+      @media only screen and (max-width: 375px) {
+        width: 300px;
+
+      }
       padding-left: 20px;
       font-family: Avenir Next Cyr, sans-serif;
       font-style: normal;
@@ -271,6 +309,10 @@ li {
     }
 
     #description {
+      @media only screen and (max-width: 375px) {
+        width: 300px;
+
+      }
       border: solid 1px #E9E9E9;
       border-radius: 5px;
       outline: none;
@@ -291,6 +333,19 @@ li {
     }
 
     .btn-primary {
+      @media only screen and (max-width: 1024px) {
+        margin-left: 85px;
+
+      }
+      @media only screen and (max-width: 375px) {
+        margin-left: 21px!important;
+
+      }
+      @media only screen and (max-width: 767px) {
+
+        margin-left: 77px;
+
+      }
       padding: 18px 83px 17px 84px;
       margin-left: 150px;
       font-family: Avenir Next Cyr, sans-serif;
@@ -312,6 +367,7 @@ li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .bg-secondary {
+  background-color: #364962!important;
   .footer-block-first {
     max-width: 1920px;
     margin: auto;
@@ -324,7 +380,6 @@ li {
     }
 
     ul {
-      margin-block-end: auto;
       li {
         display: inline;
         margin-top: 40px!important;
@@ -336,7 +391,7 @@ li {
           font-weight: normal;
           font-size: 18px;
           line-height: 22px;
-          margin-left: 50px;
+          margin-right: 50px ;
         }
       }
     }
@@ -353,6 +408,9 @@ li {
 
 }
 .footer-block-second {
+  max-width: 1920px;
+  margin: auto;
+  padding: 18px 0 24px 0;
   a {
     color: #ffffff;
     opacity: 0.4;
@@ -362,6 +420,18 @@ li {
     font-size: 16px;
     line-height: 18px;
     text-decoration-line: underline;
+  }
+  p{
+    font-family: Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+  img{
+    margin-left: 35px;
   }
 }
 
