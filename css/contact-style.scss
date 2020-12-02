@@ -15,6 +15,7 @@
 }
 
 
+
 a {
   text-decoration: none;
 }
@@ -70,6 +71,10 @@ li {
       white-space: nowrap;
 
       .nav-item {
+        @media only screen and (max-width: 768px) {
+          padding: 0;
+          margin: auto!important;
+        }
         font-family: "Avenir Next Cyr", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -102,8 +107,14 @@ li {
 
 
 .form-inline {
+  @media only screen and (max-width: 768px) {
+  }
 
   .btn {
+    @media only screen and (max-width: 768px) {
+      margin-right: 0;
+      margin: auto;
+    }
     margin-right: 352px;
     position: relative;
     color: #235DFF;
@@ -121,8 +132,11 @@ li {
 }
 
 .btn-menu {
+  @media only screen and (max-width: 1024px) {
+    margin: auto;
+
+  }
   @media only screen and (max-width: 767px) {
-    margin-left: 5px;
     text-align: center;
     display: block;
 
@@ -281,9 +295,9 @@ li {
   }
 
   .telegram {
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 768px) {
       border: none !important;
-      left: auto;
+      left: 0!important;
     }
     position: relative;
     z-index: 11;
@@ -315,25 +329,32 @@ li {
 
   .form-block {
 
+    @media only screen and (max-width: 992px) {
+      border: none !important;
+      left: 170px!important;
+    }
+
+
 
     @media only screen and (max-width: 420px) {
       border: none !important;
-      left: auto;
+      left: auto!important;
       padding-left: 10px;
       margin-left: 7px !important;
     }
 
     @media only screen and (max-width: 375px) {
       border: none !important;
-      left: auto;
+      left: auto!important;
       margin-left: 35px !important;
     }
     @media only screen and (max-width: 320px) {
       border: none !important;
-      left: auto;
+      left: auto!important;
       padding-left: 10px;
       margin-left: 8px !important;
     }
+
 
     padding-top: 41px;
 
@@ -396,7 +417,10 @@ li {
     }
 
     .btn-primary {
-
+      @media only screen and (max-width: 768px) {
+        border: none !important;
+        margin-left: 77px!important;
+      }
 
       @media only screen and (max-width: 767px) {
 
@@ -447,6 +471,7 @@ li {
 
 
     .footer-logo {
+
       padding-bottom: 32px;
       margin: auto;
     }
