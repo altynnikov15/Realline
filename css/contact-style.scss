@@ -7,13 +7,15 @@
   url('../font/AvenirNextCyr/AvenirNextCyr-Regular.ttf') format('truetype');
   font-style: normal;
 }
-
-.mycol {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-
+@font-face {
+  font-family: "Proxima Nova";
+  src: url('../font/proximanova/proximanova-Regular.eot');
+  src: local('Proxima Nova  Regular'), local('proximanova-Regular'),
+  url('../font/proximanova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/proximanova/ProximaNova-Regular.woff') format('woff'),
+  url('../font/proximanova/ProximaNova-Regular.ttf') format('truetype');
+  font-style: normal;
 }
-
 
 
 a {
@@ -26,6 +28,28 @@ li {
 }
 
 .navbar {
+  @media only screen and (max-width: 768px) {
+    width: 100% !important;
+    left: 0!important;
+  }
+  @media only screen and (max-width: 420px) {
+    width: 100% !important;
+    left: 0!important;
+  }
+  @media only screen and (max-width: 375px) {
+    width: 100% !important;
+    left: 0!important;
+  }
+  @media only screen and (max-width: 320px) {
+    width: 100% !important;
+    left: 0!important;
+  }
+  justify-content: normal!important;
+  position: fixed;
+  z-index: 22;
+
+
+
   .navbar-collapse {
     padding-left: 0 !important;
 
@@ -41,15 +65,34 @@ li {
     }
   }
 }
+.navbar-light .navbar-toggler {
+  @media only screen and (max-width: 768px) {
+    margin-left: 384px!important;
+  }
+  @media only screen and (max-width: 420px) {
+    margin-left: 50px !important;
+  }
+
+  @media only screen and (max-width: 375px) {
+    margin-left: 10px!important;
+  }
+  @media only screen and (max-width: 320px) {
+    margin-left: -41px!important;
+  }
+
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+
+}
 
 .header {
   max-width: 1920px;
   margin: auto;
 
 }
-
-.shadow-header {
-  box-shadow: -5px 10px 10px -10px #ABA6B5;
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -59,7 +102,8 @@ li {
   padding: 0;
 
   .navbar-brand {
-
+    padding-left: 30px;
+    margin-right: 92.5px;
     padding-top: 28.85px;
     padding-bottom: 28.63px;
   }
@@ -73,7 +117,7 @@ li {
       .nav-item {
         @media only screen and (max-width: 768px) {
           padding: 0;
-          margin: auto!important;
+          margin: auto !important;
         }
         font-family: "Avenir Next Cyr", sans-serif;
         font-style: normal;
@@ -141,9 +185,13 @@ li {
     display: block;
 
   }
+  margin-top: 33px;
+  margin-left: 750px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+
+  justify-content: end;
+  margin-bottom: 38px;
 
   .btn-light {
     @media only screen and (max-width: 767px) {
@@ -183,7 +231,8 @@ li {
     &:before {
 
     }
-    a{
+
+    a {
       color: #ffffff;
     }
   }
@@ -196,7 +245,7 @@ li {
   font-weight: 800;
   font-size: 26px;
   line-height: 32px;
-  padding-top: 54px;
+  padding-top: 144px;
 
   &:after {
     display: block;
@@ -220,14 +269,14 @@ li {
 
   @media only screen and (max-width: 992px) {
     border: none !important;
-
+    margin-left: -37px!important;
 
   }
   @media only screen and (max-width: 767px) {
     border: none !important;
+    margin-left: -37px!important;
 
   }
-  width: 932px;
   position: relative;
   z-index: 10;
   padding-bottom: 40px;
@@ -246,9 +295,9 @@ li {
     @media only screen and (max-width: 767px) {
       border: none !important;
       left: auto;
+
     }
-
-
+    margin-right: -74px;
     position: relative;
     z-index: 11;
     left: -70px;
@@ -266,10 +315,18 @@ li {
       padding-top: 40px;
       padding-bottom: 42px;
     }
-
     p {
+      @media only screen and (max-width: 768px) {
+        padding-left: 240px!important;
+      }
       @media only screen and (max-width: 767px) {
         margin-left: -47px;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-left: 132px!important;
+      }
+      @media only screen and (max-width: 320px) {
+        padding-left: 97px!important;
       }
       padding-left: 132px;
       font-family: Avenir Next Cyr, sans-serif;
@@ -297,14 +354,15 @@ li {
   .telegram {
     @media only screen and (max-width: 768px) {
       border: none !important;
-      left: 0!important;
+      left: 0 !important;
     }
+    margin-right: -74px;
     position: relative;
     z-index: 11;
     left: -70px;
     margin-top: 26px;
     text-align: justify;
-    padding: 74px 260px 73px 50px;
+    padding: 74px 220px 73px 50px;
     background-color: #235DFF;
     border-radius: 10px;
     background-image: url("../images/img_telegram.png");
@@ -331,26 +389,25 @@ li {
 
     @media only screen and (max-width: 992px) {
       border: none !important;
-      left: 170px!important;
+      left: 155px !important;
     }
-
 
 
     @media only screen and (max-width: 420px) {
       border: none !important;
-      left: auto!important;
+      left: auto !important;
       padding-left: 10px;
       margin-left: 7px !important;
     }
 
     @media only screen and (max-width: 375px) {
       border: none !important;
-      left: auto!important;
+      left: auto !important;
       margin-left: 35px !important;
     }
     @media only screen and (max-width: 320px) {
       border: none !important;
-      left: auto!important;
+      left: auto !important;
       padding-left: 10px;
       margin-left: 8px !important;
     }
@@ -419,7 +476,7 @@ li {
     .btn-primary {
       @media only screen and (max-width: 768px) {
         border: none !important;
-        margin-left: 77px!important;
+        margin-left: 77px !important;
       }
 
       @media only screen and (max-width: 767px) {
@@ -467,16 +524,127 @@ li {
   .footer-block-first {
     max-width: 1920px;
     margin: auto;
-    padding-top: 40px;
 
+  .contact-block-footer{
+
+
+    padding-top: 52px;
+    .p{
+      @media only screen and (max-width: 1024px) {
+        padding-top: 10px!important;
+        text-align: center!important;
+        margin-left: 15px!important;
+      }
+      @media only screen and (max-width: 768px) {
+
+        margin-left: 290px!important;
+      }
+      @media only screen and (max-width: 420px) {
+
+        margin-left: 125px!important;
+      }
+      @media only screen and (max-width: 375px) {
+        margin-left: 95px!important;
+      }
+      @media only screen and (max-width: 320px) {
+        margin-left: 70px!important;
+      }
+      font-family: Avenir Next Cyr,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+
+
+      color: #FFFFFF;
+    }
+    .border-primary{
+      @media only screen and (max-width: 1024px) {
+
+        margin-left: 375px!important;
+      }
+      @media only screen and (max-width: 768px) {
+        margin-left: 240px!important;
+      }
+      @media only screen and (max-width: 420px) {
+        margin-left: 65px!important;
+      }
+      @media only screen and (max-width: 375px) {
+        margin-left: 45px!important;
+      }
+      @media only screen and (max-width: 320px) {
+        margin-left: 20px!important;
+      }
+      border-color: #99BBF6!important;
+      border-radius: 3px;
+      height: 40px;
+      width: 230px;
+      display: block;
+      font-family: Avenir Next Cyr,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+      color: #FFFFFF!important;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      img{
+        padding-right: 10px;
+      }
+    }
+  }
 
     .footer-logo {
+      @media only screen and (max-width: 1024px) {
+       padding-top: 15px!important;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-top: 15px;
+        padding-bottom: 10px;
+      }
+
+      padding-top: 150px;
 
       padding-bottom: 32px;
       margin: auto;
+      img{
+        @media only screen and (max-width: 375px) {
+          margin-left: 80px;
+        }
+      }
+      p{
+        @media only screen and (max-width: 768px) {
+          margin-left: 14px;
+        }
+        padding-top: 25px;
+
+        font-family: "Proxima Nova",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+
+      }
     }
 
     ul {
+      @media only screen and (max-width: 1024px) {
+        padding-top: 10px!important;
+        text-align: center!important;
+        margin-left: 15px!important;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-top: 10px!important;
+        text-align: center!important;
+        margin-left: 15px!important;
+      }
+      padding-top: 150px;
       li {
         @media only screen and (max-width: 767px) {
           display: block;
@@ -487,7 +655,7 @@ li {
         margin-top: 40px !important;
 
         a {
-
+display: block;
           color: #ffffff;
           font-family: Avenir Next Cyr, sans-serif;
           font-style: normal;
@@ -495,6 +663,7 @@ li {
           font-size: 18px;
           line-height: 22px;
           margin-right: 50px;
+          padding-bottom: 12px;
         }
       }
     }
@@ -518,6 +687,28 @@ li {
   padding: 18px 0 24px 0;
 
   a {
+    @media only screen and (max-width: 1024px) {
+      margin-left: 420px!important;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 288px!important;
+
+    }
+    @media only screen and (max-width: 420px) {
+      margin-left: 112px !important;
+
+    }
+
+
+    @media only screen and (max-width: 375px) {
+      margin-left: 85px!important;
+
+    }
+    @media only screen and (max-width: 320px) {
+      margin-left: 55px!important;
+
+    }
+
     color: #ffffff;
     opacity: 0.4;
     font-family: Helvetica, sans-serif;
@@ -536,13 +727,42 @@ li {
     line-height: 18px;
     color: #ffffff;
     opacity: 0.3;
+    padding-left: 25px;
   }
-
+.images{
+  @media only screen and (max-width: 1024px) {
+    margin-left: -240px!important;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+  }
+  padding-left: 255px;
+}
   img {
+
+
     margin-left: 35px;
   }
 }
+.stores{
+  @media only screen and (max-width: 1024px) {
+    padding-top: 0!important;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-top: 10px;
 
+  }
+  padding-top: 150px;
+  p{
+    font-family: Avenir Next Cyr,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+  }
+}
 
 
 

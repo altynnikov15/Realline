@@ -20,9 +20,9 @@
 <body>
 
 <header>
-    <div class="container-fluid shadow-header">
+    <div class="container-fluid">
         <div class="row header">
-            <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+            <div class="col-12 col-lg-12 col-sm-12 col-md-12">
                 <nav class=" navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -33,11 +33,9 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <ul class="navbar-nav mr-auto text-justify">
+                        <ul class="navbar-nav mr-auto text-justify d-flex justify-content-between">
 
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-                            </li>
+
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">О продукте <span class="sr-only">(current)</span></a>
                             </li>
@@ -45,18 +43,9 @@
                                 <a class="nav-link" href="#">Пакеты <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Агенствам <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
                                 <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
                             </li>
-                            <form class="form-inline my-2 my-lg-0 ">
-                                <div style="display: none;"><input class="form-control mr-sm-2" type="search"
-                                                                   placeholder="Search"
-                                                                   aria-label="Search"></div>
-                                <button id="search" class="btn btn-outline-light my-2 my-sm-0" type="button"><i
-                                        class="fas fa-search"></i></button>
-                            </form>
+
 
                             <div class="btn-menu ">
                                 <div type="submit" class="btn-light   text-capitalize">
@@ -71,6 +60,7 @@
 
 
                             </div>
+
                         </ul>
 
 
@@ -84,21 +74,21 @@
 </header>
 <section>
     <h1 class="h1 text-center ">Свяжитесь с нами!</h1>
-    <div class="container">
-        <div class="row">
-            <div class="row main-block col-12 col-sm-12 col-md-12 col-lg-10 mycol">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mycol">
-                    <div class="contact-block">
+    <div class="container ">
+
+            <div class="row main-block col-12 col-lg-10 ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6  ">
+                    <div class="contact-block ">
                         <h2 class="h2 text-center text-capitalize">наши контакты</h2>
                         <p><i class="fas fa-phone-alt"></i> +380 (50) 234-76-36</p>
                         <p><i class="far fa-envelope"></i> admin@realline.net</p>
                     </div>
-                    <div class="telegram">
+                    <div class="telegram ">
                         <a href="#">Написать нам в<br> <span>Telegram</span></a>
                     </div>
 
                 </div>
-                <div class="form-block col-4 col-sm-4 col-md-4 col-lg-4 mycol">
+                <div class="form-block col-4 col-sm-4 col-md-4 col-lg-4 ">
                     <form method="post" action="" class="">
                         <div>
                             <label for="name">Имя</label>
@@ -121,7 +111,7 @@
             </div>
 
 
-        </div>
+
 
     </div>
 
@@ -130,40 +120,51 @@
     <div class="container-fluid">
         <div class="foot-border">
             <div class="row footer-block-first text-center">
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3  footer-logo">
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3 text-justify  footer-logo">
                     <img src="images/Logo_White.png" alt="">
+                    <p>Профессиональный инструмент для риэлтора, который помогает быть эффективным.</p>
 
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 text-justify ">
                     <ul>
-                        <li><a class="text-decoration-none" href="#">Главная</a></li>
                         <li><a class="text-decoration-none" href="#">О продукте</a></li>
                         <li><a class="text-decoration-none" href="#">Пакеты</a></li>
                         <li><a class="text-decoration-none" href="#">Контакты</a></li>
-
                     </ul>
 
 
                 </div>
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3">
-                    <p><img src="images/mail.png"> admin@realline.net</p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 text-center contact-block-footer ">
+                   <p class="p text-justify">Связаться с нами</p>
+                   <a class="border border-primary text-center" href="#" ><img src="images/mail.png"alt="">  admin@realline.net</a>
+                    <a class="border border-primary text-center" href="#" ><img src="images/telegram.png"alt="">  Telegram</a>
+                    <a class="border border-primary text-center" href="#" ><img src="images/phone.png" alt="">  +380 (50) 234-76-36</a>
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 stores">
+                  <p > Вся база в одном приложении</p>
+                    <a href="#"><img src="images/appstore.svg" alt="" ></a>
+                    <a href="#"><img src="images/googleplay.svg" alt="" ></a>
 
                 </div>
 
             </div>
         </div>
         <div class="row footer-block-second text-center">
-            <div class="col-12 col-md-3 ">
-                <a href="#">Условия пользования</a>
-            </div>
-            <div class="col-12  col-md-6 ">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-4">
                 <p>Copyright 2020 ReaLine, inc</p>
 
             </div>
-            <div class="col-12  col-md-3">
+            <div class="col-12  col-md-12 col-lg-12 col-xl-4 text-justify ">
+                <a class="text-decoration-none" href="#">Условия пользования</a>
+
+            </div>
+            <div class="col-12  col-md-12 col-lg-12 col-xl-4 ">
+                <div class="images">
                 <img src="images/visa.png" alt="">
                 <img src="images/mastercard.png" alt="">
-
+                </div>
             </div>
 
         </div>
@@ -171,10 +172,6 @@
 </footer>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
-<script>$("#search").hover(function () {
-    $("div").show("fold", 1000);
-});
-</script>
 
 </body>
 </html>
