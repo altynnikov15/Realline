@@ -7,6 +7,7 @@
   url('../font/AvenirNextCyr/AvenirNextCyr-Regular.ttf') format('truetype');
   font-style: normal;
 }
+
 @font-face {
   font-family: "Proxima Nova";
   src: url('../font/proximanova/proximanova-Regular.eot');
@@ -26,125 +27,54 @@ li {
   display: inline;
   list-style-type: none;
 }
+.bg-light{
+  background-color: #FFFFFF!important;
+}
+.navbar-nav {
+  white-space: nowrap;
+}
 
-.navbar {
+.navbar{
   @media only screen and (max-width: 768px) {
-    width: 100% !important;
-    left: 0!important;
+    padding: 0.5rem 1rem;
   }
-  @media only screen and (max-width: 420px) {
-    width: 100% !important;
-    left: 0!important;
-  }
-  @media only screen and (max-width: 375px) {
-    width: 100% !important;
-    left: 0!important;
-  }
-  @media only screen and (max-width: 320px) {
-    width: 100% !important;
-    left: 0!important;
-  }
-  justify-content: normal!important;
-  position: fixed;
-  z-index: 22;
-
-
-
-  .navbar-collapse {
-    padding-left: 0 !important;
-
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          text-align: center !important;
-
-          color: #364962 !important;
-
-        }
-      }
-    }
-  }
-}
-.navbar-light .navbar-toggler {
-  @media only screen and (max-width: 768px) {
-    margin-left: 384px!important;
-  }
-  @media only screen and (max-width: 420px) {
-    margin-left: 50px !important;
-  }
-
-  @media only screen and (max-width: 375px) {
-    margin-left: 10px!important;
-  }
-  @media only screen and (max-width: 320px) {
-    margin-left: -41px!important;
-  }
-
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
-
-}
-
-.header {
-  max-width: 1920px;
-  margin: auto;
-
-}
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-
-  margin: auto;
-  background-color: #ffffff !important;
   padding: 0;
 
-  .navbar-brand {
-    padding-left: 30px;
-    margin-right: 92.5px;
-    padding-top: 28.85px;
-    padding-bottom: 28.63px;
-  }
+  max-width: 1670px;
+  margin: auto;
 
-  .navbar-collapse {
-    padding-left: 92.59px;
+  .nav-item{
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      padding-top: 0;
+    }
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 10px;
 
-    .navbar-nav {
-      white-space: nowrap;
 
-      .nav-item {
-        @media only screen and (max-width: 768px) {
-          padding: 0;
-          margin: auto !important;
-        }
-        font-family: "Avenir Next Cyr", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 25px;
-        padding-top: 32px;
-        padding-bottom: 33px;
-        margin-right: 60px;
-        border-bottom: solid 3px transparent;
 
-        &:hover {
-          transition: 0.3s;
-          border-bottom: solid 3px #235DFF;
+    border-bottom: solid 3px transparent;
+    &:hover {
+      transition: 0.3s;
+      border-bottom: solid 3px #235DFF;
 
-        }
-
-        .nav-link {
-          color: #364962 !important;
-
-          &:hover {
-            transition: 0.3s;
-            color: #235DFF !important;
-          }
-        }
+    }
+    .nav-link {
+      @media only screen and (max-width: 768px) {
+        padding: 16.6px 16px;
       }
+      padding: 27.6px 16px;
+      margin:0 15.2px;
+      color: #364962 !important;
 
+      &:hover {
+        transition: 0.3s;
+        color: #235DFF !important;
+      }
     }
   }
 }
@@ -269,12 +199,12 @@ li {
 
   @media only screen and (max-width: 992px) {
     border: none !important;
-    margin-left: -37px!important;
+    margin-left: -37px !important;
 
   }
   @media only screen and (max-width: 767px) {
     border: none !important;
-    margin-left: -37px!important;
+    margin-left: -37px !important;
 
   }
   position: relative;
@@ -315,25 +245,27 @@ li {
       padding-top: 40px;
       padding-bottom: 42px;
     }
+
     p {
       @media only screen and (max-width: 768px) {
-        padding-left: 240px!important;
+        padding-left: 240px !important;
       }
       @media only screen and (max-width: 767px) {
         margin-left: -47px;
       }
       @media only screen and (max-width: 768px) {
-        padding-left: 132px!important;
+        padding-left: 132px !important;
       }
       @media only screen and (max-width: 320px) {
-        padding-left: 97px!important;
+        padding-left: 97px !important;
       }
-      padding-left: 132px;
-      font-family: Avenir Next Cyr, sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
+
+        padding-left: 132px;
+        font-family: Avenir Next Cyr, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
 
       .fa-phone-alt {
         color: #235DFF;
@@ -347,6 +279,14 @@ li {
         background-color: rgba(35, 93, 255, 0.1);
         padding: 12px 12px;
         border-radius: 40px;
+      }
+      a{
+        font-family: Avenir Next Cyr,sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #364962;
       }
     }
   }
@@ -387,11 +327,16 @@ li {
 
   .form-block {
 
+
     @media only screen and (max-width: 992px) {
       border: none !important;
       left: 155px !important;
     }
+    @media only screen and (max-width: 541px){
 
+    left: 65px !important;
+
+  }
 
     @media only screen and (max-width: 420px) {
       border: none !important;
@@ -525,102 +470,107 @@ li {
     max-width: 1920px;
     margin: auto;
 
-  .contact-block-footer{
-
-
-    padding-top: 52px;
-    .p{
+    .contact-block-footer {
       @media only screen and (max-width: 1024px) {
-        padding-top: 10px!important;
-        text-align: center!important;
-        margin-left: 15px!important;
+       padding-top: 0!important;
       }
-      @media only screen and (max-width: 768px) {
-
-        margin-left: 290px!important;
-      }
-      @media only screen and (max-width: 420px) {
-
-        margin-left: 125px!important;
-      }
-      @media only screen and (max-width: 375px) {
-        margin-left: 95px!important;
-      }
-      @media only screen and (max-width: 320px) {
-        margin-left: 70px!important;
-      }
-      font-family: Avenir Next Cyr,sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 16px;
 
 
-      color: #FFFFFF;
-    }
-    .border-primary{
-      @media only screen and (max-width: 1024px) {
+      padding-top: 52px;
 
-        margin-left: 375px!important;
+      .p {
+        @media only screen and (max-width: 1024px) {
+          text-align: center !important;
+
+        }
+
+        font-family: Avenir Next Cyr, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+
+
+        color: #FFFFFF;
       }
-      @media only screen and (max-width: 768px) {
-        margin-left: 240px!important;
-      }
-      @media only screen and (max-width: 420px) {
-        margin-left: 65px!important;
-      }
-      @media only screen and (max-width: 375px) {
-        margin-left: 45px!important;
-      }
-      @media only screen and (max-width: 320px) {
-        margin-left: 20px!important;
-      }
-      border-color: #99BBF6!important;
-      border-radius: 3px;
-      height: 40px;
-      width: 230px;
-      display: block;
-      font-family: Avenir Next Cyr,sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 16px;
-      color: #FFFFFF!important;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      margin-bottom: 8px;
-      text-decoration: none;
-      img{
-        padding-right: 10px;
+
+      .border-primary {
+        @media only screen and (max-width: 1024px) {
+
+          margin-left: 368px !important;
+        }
+        @media only screen and (max-width: 768px) {
+          margin-left: 240px !important;
+        }
+        @media only screen and (max-width: 541px){
+
+          margin-left: 135px !important;
+
+        }
+        @media only screen and (max-width: 420px) {
+          margin-left: 65px !important;
+        }
+        @media only screen and (max-width: 375px) {
+          margin-left: 45px !important;
+        }
+        @media only screen and (max-width: 320px) {
+          margin-left: 20px !important;
+        }
+        border-color: #99BBF6 !important;
+        border-radius: 3px;
+        height: 40px;
+        width: 230px;
+        display: block;
+        font-family: Avenir Next Cyr, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF !important;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 8px;
+        text-decoration: none;
+
+        img {
+          padding-right: 10px;
+        }
       }
     }
-  }
 
     .footer-logo {
       @media only screen and (max-width: 1024px) {
-       padding-top: 15px!important;
+        padding-top: 15px !important;
+        text-align: center!important;
       }
       @media only screen and (max-width: 768px) {
         padding-top: 15px;
         padding-bottom: 10px;
+        text-align: center!important;
       }
 
       padding-top: 150px;
 
       padding-bottom: 32px;
       margin: auto;
-      img{
-        @media only screen and (max-width: 375px) {
-          margin-left: 80px;
-        }
+
+      img {
+
+
       }
-      p{
+
+      p {
+        @media only screen and (max-width: 1024px) {
+          display: block;
+        }
         @media only screen and (max-width: 768px) {
-          margin-left: 14px;
+display: inline-block;
+          width: 100%;
+          justify-content: center;
         }
         padding-top: 25px;
 
-        font-family: "Proxima Nova",sans-serif;
+        font-family: "Proxima Nova", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -635,16 +585,17 @@ li {
 
     ul {
       @media only screen and (max-width: 1024px) {
-        padding-top: 10px!important;
-        text-align: center!important;
-        margin-left: 15px!important;
+        padding-top: 10px !important;
+        text-align: center !important;
+        margin-left: 15px !important;
       }
       @media only screen and (max-width: 768px) {
-        padding-top: 10px!important;
-        text-align: center!important;
-        margin-left: 15px!important;
+        padding-top: 10px !important;
+        text-align: center !important;
+        margin-left: 15px !important;
       }
       padding-top: 150px;
+
       li {
         @media only screen and (max-width: 767px) {
           display: block;
@@ -655,7 +606,7 @@ li {
         margin-top: 40px !important;
 
         a {
-display: block;
+          display: block;
           color: #ffffff;
           font-family: Avenir Next Cyr, sans-serif;
           font-style: normal;
@@ -688,25 +639,8 @@ display: block;
 
   a {
     @media only screen and (max-width: 1024px) {
-      margin-left: 420px!important;
-    }
-    @media only screen and (max-width: 768px) {
-      margin-left: 288px!important;
-
-    }
-    @media only screen and (max-width: 420px) {
-      margin-left: 112px !important;
-
-    }
-
-
-    @media only screen and (max-width: 375px) {
-      margin-left: 85px!important;
-
-    }
-    @media only screen and (max-width: 320px) {
-      margin-left: 55px!important;
-
+      display: block;
+      text-align: center;
     }
 
     color: #ffffff;
@@ -717,9 +651,14 @@ display: block;
     font-size: 16px;
     line-height: 18px;
     text-decoration-line: underline;
+    padding-left: 35px;
   }
 
   p {
+    @media only screen and (max-width: 1024px) {
+
+      text-align: center!important;
+    }
     font-family: Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -727,34 +666,36 @@ display: block;
     line-height: 18px;
     color: #ffffff;
     opacity: 0.3;
-    padding-left: 25px;
   }
-.images{
-  @media only screen and (max-width: 1024px) {
-    margin-left: -240px!important;
+
+  .images {
+    @media only screen and (max-width: 1024px) {
+      display: block;
+      text-align: center!important;
+    }
   }
-  @media only screen and (max-width: 768px) {
-    padding: 0;
-  }
-  padding-left: 255px;
-}
+
   img {
 
 
     margin-left: 35px;
   }
 }
-.stores{
+
+.stores {
   @media only screen and (max-width: 1024px) {
-    padding-top: 0!important;
+    padding-top: 0 !important;
+    text-align: center!important;
   }
   @media only screen and (max-width: 768px) {
     padding-top: 10px;
 
   }
+  text-align: right;
   padding-top: 150px;
-  p{
-    font-family: Avenir Next Cyr,sans-serif;
+
+  p {
+    font-family: Avenir Next Cyr, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

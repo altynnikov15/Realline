@@ -19,58 +19,37 @@
 </head>
 <body>
 
-<header>
-    <div class="container-fluid">
-        <div class="row header">
-            <div class="col-12 col-lg-12 col-sm-12 col-md-12">
-                <nav class=" navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<header style="position: fixed; z-index: 22;left: 0;right: 0;border-bottom: 1px solid #E9E9E9; " >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <ul class="navbar-nav mr-auto text-justify d-flex justify-content-between">
-
-
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">О продукте <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Пакеты <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
-                            </li>
-
-
-                            <div class="btn-menu ">
-                                <div type="submit" class="btn-light   text-capitalize">
-                                    <a href="#"  class="text-decoration-none">
-                                        вход</a>
-
-                                </div>
-                                <div type="submit" class="btn-primary text-decoration-none text-capitalize">
-                                    <a href="#" class="text-decoration-none" >
-                                        регистрация</a>
-                                </div>
-
-
-                            </div>
-
-                        </ul>
-
-
-                    </div>
-                </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">О продукте <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Пакеты <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="form-inline btn-menu my-2 my-lg-0">
+                <div type="submit" class="btn-light   text-capitalize">
+                    <a href="#"  class="text-decoration-none">
+                        вход</a>
+                </div>
+                <div type="submit" class="btn-primary text-decoration-none text-capitalize">
+                    <a href="#" class="text-decoration-none" >
+                        регистрация</a>
+                </div>
             </div>
-
-
         </div>
-    </div>
+    </nav>
 </header>
 <section>
     <h1 class="h1 text-center ">Свяжитесь с нами!</h1>
@@ -80,8 +59,8 @@
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6  ">
                     <div class="contact-block ">
                         <h2 class="h2 text-center text-capitalize">наши контакты</h2>
-                        <p><i class="fas fa-phone-alt"></i> +380 (50) 234-76-36</p>
-                        <p><i class="far fa-envelope"></i> admin@realline.net</p>
+                        <p><a class="text-decoration-none" href="#"><i class="fas fa-phone-alt"></i> +380 (50) 234-76-36</a></p>
+                        <p><a class="text-decoration-none" href="#"><i class="far fa-envelope"></i> admin@realline.net</a></p>
                     </div>
                     <div class="telegram ">
                         <a href="#">Написать нам в<br> <span>Telegram</span></a>
@@ -120,10 +99,11 @@
     <div class="container-fluid ">
         <div>
             <div class="row footer-block-first text-center foot-border">
-                <div class="col-12 col-sm-3 col-md-3 col-lg-3 text-justify  footer-logo">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 text-justify footer-logo">
                     <img src="images/Logo_White.png" alt="">
+                    <div>
                     <p>Профессиональный инструмент для риэлтора, который помогает быть эффективным.</p>
-
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 text-justify ">
                     <ul>
@@ -134,12 +114,13 @@
 
 
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 text-center contact-block-footer ">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 text-center contact-block-footer ">
                    <p class="p text-justify">Связаться с нами</p>
+                    <div>
                    <a class="border border-primary text-center" href="#" ><img src="images/mail.png"alt="">  admin@realline.net</a>
                     <a class="border border-primary text-center" href="#" ><img src="images/telegram.png"alt="">  Telegram</a>
                     <a class="border border-primary text-center" href="#" ><img src="images/phone.png" alt="">  +380 (50) 234-76-36</a>
-
+                    </div>
 
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 stores">
@@ -151,16 +132,16 @@
 
             </div>
         </div>
-        <div class="row footer-block-second text-center">
-            <div class="col-12 col-md-12 col-lg-12 col-xl-4">
-                <p>Copyright 2020 ReaLine, inc</p>
+        <div class="row footer-block-second text-justify">
+            <div class="col-12 col-md-12 col-lg-12 col-xl-3">
+                <p>© ReaLine Inc., 2020 г. Все права защищены.</p>
 
             </div>
-            <div class="col-12  col-md-12 col-lg-12 col-xl-4 text-justify ">
+            <div class="col-12  col-md-12 col-lg-12 col-xl-6 text-left ">
                 <a class="text-decoration-none" href="#">Условия пользования</a>
 
             </div>
-            <div class="col-12  col-md-12 col-lg-12 col-xl-4 ">
+            <div class="col-12  col-md-12 col-lg-12 col-xl-3 text-right">
                 <div class="images">
                 <img src="images/visa.png" alt="">
                 <img src="images/mastercard.png" alt="">
