@@ -639,6 +639,7 @@ display: inline-block;
 
   a {
     @media only screen and (max-width: 1024px) {
+      padding-left: 0;
       display: block;
       text-align: center;
     }
@@ -676,6 +677,9 @@ display: inline-block;
   }
 
   img {
+    @media only screen and (max-width: 1024px) {
+      margin-left: 0;
+    }
 
 
     margin-left: 35px;
