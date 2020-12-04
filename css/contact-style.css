@@ -182,16 +182,9 @@ li {
       line-height: 22px; }
       @media only screen and (max-width: 768px) {
         .main-block .contact-block p {
-          padding-left: 240px !important; } }
-      @media only screen and (max-width: 767px) {
-        .main-block .contact-block p {
-          margin-left: -47px; } }
-      @media only screen and (max-width: 768px) {
-        .main-block .contact-block p {
-          padding-left: 132px !important; } }
-      @media only screen and (max-width: 320px) {
-        .main-block .contact-block p {
-          padding-left: 97px !important; } }
+          display: block;
+          text-align: center;
+          padding-left: 0 !important; } }
       .main-block .contact-block p .fa-phone-alt {
         color: #235DFF;
         background-color: rgba(35, 93, 255, 0.1);
@@ -341,7 +334,7 @@ li {
   margin-top: 200px;
   background-color: #364962 !important; }
   .bg-secondary .footer-block-first {
-    max-width: 1920px;
+    max-width: 1670px;
     margin: auto; }
     .bg-secondary .footer-block-first .contact-block-footer {
       padding-top: 52px; }
@@ -464,7 +457,7 @@ li {
       line-height: 22px; }
 
 .footer-block-second {
-  max-width: 1920px;
+  max-width: 1670px;
   margin: auto;
   padding: 18px 0 24px 0; }
   .footer-block-second a {

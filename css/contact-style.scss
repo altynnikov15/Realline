@@ -248,17 +248,11 @@ li {
 
     p {
       @media only screen and (max-width: 768px) {
-        padding-left: 240px !important;
+        display: block;
+        text-align: center;
+        padding-left: 0!important;
       }
-      @media only screen and (max-width: 767px) {
-        margin-left: -47px;
-      }
-      @media only screen and (max-width: 768px) {
-        padding-left: 132px !important;
-      }
-      @media only screen and (max-width: 320px) {
-        padding-left: 97px !important;
-      }
+
 
         padding-left: 132px;
         font-family: Avenir Next Cyr, sans-serif;
@@ -467,7 +461,7 @@ li {
   background-color: #364962 !important;
 
   .footer-block-first {
-    max-width: 1920px;
+    max-width: 1670px;
     margin: auto;
 
     .contact-block-footer {
@@ -633,7 +627,7 @@ display: inline-block;
 }
 
 .footer-block-second {
-  max-width: 1920px;
+  max-width: 1670px;
   margin: auto;
   padding: 18px 0 24px 0;
 
