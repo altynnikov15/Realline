@@ -25,6 +25,10 @@ li {
   padding: 0;
   max-width: 1670px;
   margin: auto; }
+  @media only screen and (max-width: 1366px) {
+    .navbar {
+      margin-left: 0;
+      padding: 0.5rem 1rem; } }
   @media only screen and (max-width: 768px) {
     .navbar {
       padding: 0.5rem 1rem; } }
@@ -76,9 +80,9 @@ li {
   justify-content: space-between;
   justify-content: end;
   margin-bottom: 38px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1366px) {
     .btn-menu {
-      margin: auto; } }
+      margin-left: 0; } }
   @media only screen and (max-width: 767px) {
     .btn-menu {
       text-align: center;
@@ -233,16 +237,14 @@ li {
     @media only screen and (max-width: 992px) {
       .main-block .form-block {
         border: none !important;
-        left: 155px !important; } }
+        left: 40px !important; } }
     @media only screen and (max-width: 541px) {
       .main-block .form-block {
         left: 65px !important; } }
     @media only screen and (max-width: 420px) {
       .main-block .form-block {
         border: none !important;
-        left: auto !important;
-        padding-left: 10px;
-        margin-left: 7px !important; } }
+        left: 40px !important; } }
     @media only screen and (max-width: 375px) {
       .main-block .form-block {
         border: none !important;
@@ -269,7 +271,7 @@ li {
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
-      width: 400px;
+      width: 100%;
       height: 55px;
       margin-bottom: 25px;
       border: solid 1px #E9E9E9;
@@ -291,7 +293,7 @@ li {
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
-      width: 400px;
+      width: 100%;
       height: 150px;
       resize: none; }
       @media only screen and (max-width: 375px) {
@@ -301,7 +303,7 @@ li {
         border: 1px solid #235DFF; }
     .main-block .form-block .btn-primary {
       padding: 18px 83px 17px 84px;
-      margin-left: 150px;
+      margin-left: 165px;
       font-family: Avenir Next Cyr, sans-serif;
       font-style: normal;
       font-weight: normal;
@@ -313,16 +315,19 @@ li {
       border: none;
       outline: none;
       margin-top: 30px; }
+      @media only screen and (max-width: 1024px) {
+        .main-block .form-block .btn-primary {
+          margin-left: 95px !important; } }
       @media only screen and (max-width: 768px) {
         .main-block .form-block .btn-primary {
           border: none !important;
-          margin-left: 77px !important; } }
+          margin-left: 185px !important; } }
       @media only screen and (max-width: 767px) {
         .main-block .form-block .btn-primary {
           margin-left: 30px !important; } }
       @media only screen and (max-width: 414px) {
         .main-block .form-block .btn-primary {
-          margin-left: 75px !important; } }
+          margin-left: 40px !important; } }
       @media only screen and (max-width: 375px) {
         .main-block .form-block .btn-primary {
           margin-left: 30px !important; } }

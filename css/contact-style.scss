@@ -35,6 +35,12 @@ li {
 }
 
 .navbar{
+  @media only screen and (max-width: 1366px) {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+
+
+  }
   @media only screen and (max-width: 768px) {
     padding: 0.5rem 1rem;
   }
@@ -42,7 +48,6 @@ li {
 
   max-width: 1670px;
   margin: auto;
-
   .nav-item{
     @media only screen and (max-width: 768px) {
       text-align: center;
@@ -104,12 +109,13 @@ li {
 
   }
 }
-
 .btn-menu {
-  @media only screen and (max-width: 1024px) {
-    margin: auto;
+  @media only screen and (max-width: 1366px) {
+    margin-left: 0;
 
   }
+
+
   @media only screen and (max-width: 767px) {
     text-align: center;
     display: block;
@@ -324,7 +330,7 @@ li {
 
     @media only screen and (max-width: 992px) {
       border: none !important;
-      left: 155px !important;
+      left: 40px !important;
     }
     @media only screen and (max-width: 541px){
 
@@ -334,9 +340,8 @@ li {
 
     @media only screen and (max-width: 420px) {
       border: none !important;
-      left: auto !important;
-      padding-left: 10px;
-      margin-left: 7px !important;
+      left: 40px !important;
+
     }
 
     @media only screen and (max-width: 375px) {
@@ -375,7 +380,7 @@ li {
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
-      width: 400px;
+      width: 100%;
       height: 55px;
       margin-bottom: 25px;
       border: solid 1px #E9E9E9;
@@ -403,7 +408,7 @@ li {
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
-      width: 400px;
+      width: 100%;
       height: 150px;
       resize: none;
 
@@ -413,11 +418,16 @@ li {
     }
 
     .btn-primary {
+
+      @media only screen and (max-width: 1024px) {
+
+        margin-left: 95px !important;
+
+      }
       @media only screen and (max-width: 768px) {
         border: none !important;
-        margin-left: 77px !important;
+        margin-left: 185px !important;
       }
-
       @media only screen and (max-width: 767px) {
 
         margin-left: 30px !important;
@@ -425,7 +435,7 @@ li {
       }
       @media only screen and (max-width: 414px) {
 
-        margin-left: 75px !important;
+        margin-left: 40px !important;
 
       }
       @media only screen and (max-width: 375px) {
@@ -436,7 +446,7 @@ li {
 
 
       padding: 18px 83px 17px 84px;
-      margin-left: 150px;
+      margin-left: 165px;
       font-family: Avenir Next Cyr, sans-serif;
       font-style: normal;
       font-weight: normal;
